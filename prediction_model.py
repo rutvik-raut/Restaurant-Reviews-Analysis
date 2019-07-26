@@ -47,7 +47,7 @@ classifier.fit(X_train, y_train)
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
 
-# Making the Confusion Matrix
+# Generating the Confusion Matrix and Classification Report
 from sklearn.metrics import confusion_matrix, classification_report
 cm = confusion_matrix(y_test, y_pred)
 cr = classification_report(y_test, y_pred)
